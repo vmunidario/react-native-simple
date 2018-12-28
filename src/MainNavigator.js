@@ -9,6 +9,7 @@ import MapScreen from './screens/Map';
 import SettingsScreen from './screens/Settings';
 import AccordionScreen from './screens/Accordion';
 import ListScreen from './screens/List';
+import SignupScreen from './screens/Signup';
 
 const TabStack = createBottomTabNavigator(
   {
@@ -38,6 +39,7 @@ const Drawer = createDrawerNavigator(
 const AppNavigator = createAppContainer(createStackNavigator(
   {
     Login: { screen: LoginScreen },
+    Signup: { screen: SignupScreen },
     Drawer: { screen: Drawer }
   },
   {
